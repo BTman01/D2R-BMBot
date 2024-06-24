@@ -175,7 +175,7 @@ public class GameStruc
         AllGamesPlayersCount = new List<int>();
         ClicTopRow();
         Form1_0.KeyMouse_0.MouseClicc(1190, 990); //clic 'salon' if not in server
-        Form1_0.KeyMouse_0.MouseClicc(1415, 65);  //clic 'join game' if not in game list area
+        Form1_0.KeyMouse_0.MouseClicc(1415, 655);  //clic 'join game' if not in game list area
 
         //#####
         if (!TypedSearchGames)

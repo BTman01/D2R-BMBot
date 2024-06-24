@@ -38,6 +38,7 @@ partial class Form1
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBoxResolution = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.richTextBoxErrorLogs = new System.Windows.Forms.RichTextBox();
@@ -60,6 +61,8 @@ partial class Form1
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.richTextBoxDebugMapData = new System.Windows.Forms.RichTextBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.comboBoxCollisionArea = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.richTextBoxDebugMapCollision = new System.Windows.Forms.RichTextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.labelGameName = new System.Windows.Forms.ToolStripStatusLabel();
@@ -79,8 +82,6 @@ partial class Form1
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.comboBoxCollisionArea = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -102,9 +103,10 @@ partial class Form1
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Blue;
             this.button1.Image = global::app.Properties.Resources.control;
-            this.button1.Location = new System.Drawing.Point(5, 3);
+            this.button1.Location = new System.Drawing.Point(8, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(37, 25);
+            this.button1.Size = new System.Drawing.Size(56, 38);
             this.button1.TabIndex = 0;
             this.toolTip1.SetToolTip(this.button1, "Start or Stop the Bot");
             this.button1.UseVisualStyleBackColor = true;
@@ -119,17 +121,20 @@ partial class Form1
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(342, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(513, 8);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(207, 376);
+            this.dataGridView1.Size = new System.Drawing.Size(310, 578);
             this.dataGridView1.TabIndex = 2;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Descriptions";
+            this.Column1.MinimumWidth = 8;
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.Width = 95;
@@ -138,6 +143,7 @@ partial class Form1
             // 
             this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Column2.HeaderText = "Values";
+            this.Column2.MinimumWidth = 8;
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
@@ -145,11 +151,12 @@ partial class Form1
             // 
             this.richTextBox1.DetectUrls = false;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox1.Location = new System.Drawing.Point(4, 5);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBox1.Size = new System.Drawing.Size(317, 318);
+            this.richTextBox1.Size = new System.Drawing.Size(480, 495);
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "";
             // 
@@ -157,11 +164,12 @@ partial class Form1
             // 
             this.richTextBox2.DetectUrls = false;
             this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox2.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox2.Location = new System.Drawing.Point(4, 5);
+            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
             this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBox2.Size = new System.Drawing.Size(317, 318);
+            this.richTextBox2.Size = new System.Drawing.Size(480, 495);
             this.richTextBox2.TabIndex = 7;
             this.richTextBox2.Text = "";
             // 
@@ -172,30 +180,47 @@ partial class Form1
             this.tabControl1.Controls.Add(this.tabPage8);
             this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Controls.Add(this.tabPage10);
-            this.tabControl1.Location = new System.Drawing.Point(5, 31);
+            this.tabControl1.Location = new System.Drawing.Point(8, 48);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(331, 350);
+            this.tabControl1.Size = new System.Drawing.Size(496, 538);
             this.tabControl1.TabIndex = 14;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.comboBoxResolution);
             this.tabPage1.Controls.Add(this.richTextBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(323, 324);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage1.Size = new System.Drawing.Size(488, 505);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Logs";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // comboBoxResolution
+            // 
+            this.comboBoxResolution.FormattingEnabled = true;
+            this.comboBoxResolution.Items.AddRange(new object[] {
+            "1920x1080",
+            "3840x2160"});
+            this.comboBoxResolution.Location = new System.Drawing.Point(330, 452);
+            this.comboBoxResolution.Name = "comboBoxResolution";
+            this.comboBoxResolution.Size = new System.Drawing.Size(121, 28);
+            this.comboBoxResolution.TabIndex = 108;
+            this.comboBoxResolution.Tag = "comboBoxResolution";
+            this.comboBoxResolution.Text = "Resolution";
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.richTextBox2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(323, 324);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage2.Size = new System.Drawing.Size(488, 505);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Items Logs";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -203,9 +228,10 @@ partial class Form1
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.richTextBoxErrorLogs);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Location = new System.Drawing.Point(4, 29);
+            this.tabPage8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(323, 324);
+            this.tabPage8.Size = new System.Drawing.Size(488, 505);
             this.tabPage8.TabIndex = 2;
             this.tabPage8.Text = "Errors Logs";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -215,19 +241,21 @@ partial class Form1
             this.richTextBoxErrorLogs.DetectUrls = false;
             this.richTextBoxErrorLogs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxErrorLogs.Location = new System.Drawing.Point(0, 0);
+            this.richTextBoxErrorLogs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBoxErrorLogs.Name = "richTextBoxErrorLogs";
             this.richTextBoxErrorLogs.ReadOnly = true;
             this.richTextBoxErrorLogs.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBoxErrorLogs.Size = new System.Drawing.Size(323, 324);
+            this.richTextBoxErrorLogs.Size = new System.Drawing.Size(488, 505);
             this.richTextBoxErrorLogs.TabIndex = 8;
             this.richTextBoxErrorLogs.Text = "";
             // 
             // tabPage9
             // 
             this.tabPage9.Controls.Add(this.richTextBoxGamesLogs);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Location = new System.Drawing.Point(4, 29);
+            this.tabPage9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(323, 324);
+            this.tabPage9.Size = new System.Drawing.Size(488, 505);
             this.tabPage9.TabIndex = 3;
             this.tabPage9.Text = "Games Logs";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -237,19 +265,21 @@ partial class Form1
             this.richTextBoxGamesLogs.DetectUrls = false;
             this.richTextBoxGamesLogs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxGamesLogs.Location = new System.Drawing.Point(0, 0);
+            this.richTextBoxGamesLogs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBoxGamesLogs.Name = "richTextBoxGamesLogs";
             this.richTextBoxGamesLogs.ReadOnly = true;
             this.richTextBoxGamesLogs.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBoxGamesLogs.Size = new System.Drawing.Size(323, 324);
+            this.richTextBoxGamesLogs.Size = new System.Drawing.Size(488, 505);
             this.richTextBoxGamesLogs.TabIndex = 8;
             this.richTextBoxGamesLogs.Text = "";
             // 
             // tabPage10
             // 
             this.tabPage10.Controls.Add(this.richTextBoSoldLogs);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Location = new System.Drawing.Point(4, 29);
+            this.tabPage10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(323, 324);
+            this.tabPage10.Size = new System.Drawing.Size(488, 505);
             this.tabPage10.TabIndex = 4;
             this.tabPage10.Text = "Sold Logs";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -259,10 +289,11 @@ partial class Form1
             this.richTextBoSoldLogs.DetectUrls = false;
             this.richTextBoSoldLogs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoSoldLogs.Location = new System.Drawing.Point(0, 0);
+            this.richTextBoSoldLogs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBoSoldLogs.Name = "richTextBoSoldLogs";
             this.richTextBoSoldLogs.ReadOnly = true;
             this.richTextBoSoldLogs.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBoSoldLogs.Size = new System.Drawing.Size(323, 324);
+            this.richTextBoSoldLogs.Size = new System.Drawing.Size(488, 505);
             this.richTextBoSoldLogs.TabIndex = 6;
             this.richTextBoSoldLogs.Text = "";
             this.richTextBoSoldLogs.WordWrap = false;
@@ -271,9 +302,10 @@ partial class Form1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(249, 3);
+            this.button2.Location = new System.Drawing.Point(374, 5);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 25);
+            this.button2.Size = new System.Drawing.Size(130, 38);
             this.button2.TabIndex = 18;
             this.button2.Text = "Debug Menu";
             this.toolTip1.SetToolTip(this.button2, "Open the Debug menu\'s");
@@ -287,10 +319,11 @@ partial class Form1
             this.tabControl2.Controls.Add(this.tabPage5);
             this.tabControl2.Controls.Add(this.tabPage6);
             this.tabControl2.Controls.Add(this.tabPage7);
-            this.tabControl2.Location = new System.Drawing.Point(5, 385);
+            this.tabControl2.Location = new System.Drawing.Point(8, 592);
+            this.tabControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(544, 228);
+            this.tabControl2.Size = new System.Drawing.Size(816, 351);
             this.tabControl2.TabIndex = 19;
             this.tabControl2.SelectedIndexChanged += new System.EventHandler(this.tabControl2_SelectedIndexChanged);
             // 
@@ -300,10 +333,11 @@ partial class Form1
             this.tabPage3.Controls.Add(this.comboBoxItemsCategory);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Controls.Add(this.richTextBoxDebugItems);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 29);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(536, 202);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage3.Size = new System.Drawing.Size(808, 318);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Items";
             // 
@@ -324,18 +358,20 @@ partial class Form1
             "On Ground",
             "In Shop",
             "Others"});
-            this.comboBoxItemsCategory.Location = new System.Drawing.Point(66, 5);
+            this.comboBoxItemsCategory.Location = new System.Drawing.Point(99, 8);
+            this.comboBoxItemsCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxItemsCategory.Name = "comboBoxItemsCategory";
-            this.comboBoxItemsCategory.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxItemsCategory.Size = new System.Drawing.Size(180, 28);
             this.comboBoxItemsCategory.TabIndex = 22;
             this.comboBoxItemsCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxItemsCategory_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 8);
+            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.Size = new System.Drawing.Size(77, 20);
             this.label1.TabIndex = 21;
             this.label1.Text = "Category:";
             // 
@@ -344,10 +380,11 @@ partial class Form1
             this.richTextBoxDebugItems.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBoxDebugItems.DetectUrls = false;
-            this.richTextBoxDebugItems.Location = new System.Drawing.Point(3, 30);
+            this.richTextBoxDebugItems.Location = new System.Drawing.Point(4, 46);
+            this.richTextBoxDebugItems.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBoxDebugItems.Name = "richTextBoxDebugItems";
             this.richTextBoxDebugItems.ReadOnly = true;
-            this.richTextBoxDebugItems.Size = new System.Drawing.Size(530, 169);
+            this.richTextBoxDebugItems.Size = new System.Drawing.Size(793, 258);
             this.richTextBoxDebugItems.TabIndex = 20;
             this.richTextBoxDebugItems.Text = "";
             this.richTextBoxDebugItems.WordWrap = false;
@@ -357,19 +394,21 @@ partial class Form1
             this.tabPage4.BackColor = System.Drawing.Color.LightGray;
             this.tabPage4.Controls.Add(this.checkBoxShowOnlyValidMobs);
             this.tabPage4.Controls.Add(this.richTextBoxDebugMobs);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Location = new System.Drawing.Point(4, 29);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(536, 202);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage4.Size = new System.Drawing.Size(808, 318);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Mobs/NPC";
             // 
             // checkBoxShowOnlyValidMobs
             // 
             this.checkBoxShowOnlyValidMobs.AutoSize = true;
-            this.checkBoxShowOnlyValidMobs.Location = new System.Drawing.Point(6, 6);
+            this.checkBoxShowOnlyValidMobs.Location = new System.Drawing.Point(9, 9);
+            this.checkBoxShowOnlyValidMobs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxShowOnlyValidMobs.Name = "checkBoxShowOnlyValidMobs";
-            this.checkBoxShowOnlyValidMobs.Size = new System.Drawing.Size(220, 17);
+            this.checkBoxShowOnlyValidMobs.Size = new System.Drawing.Size(316, 24);
             this.checkBoxShowOnlyValidMobs.TabIndex = 22;
             this.checkBoxShowOnlyValidMobs.Text = "Show Mobs/NPC with valid Position Only";
             this.checkBoxShowOnlyValidMobs.UseVisualStyleBackColor = true;
@@ -380,11 +419,12 @@ partial class Form1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBoxDebugMobs.DetectUrls = false;
-            this.richTextBoxDebugMobs.Location = new System.Drawing.Point(3, 29);
+            this.richTextBoxDebugMobs.Location = new System.Drawing.Point(4, 45);
+            this.richTextBoxDebugMobs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBoxDebugMobs.Name = "richTextBoxDebugMobs";
             this.richTextBoxDebugMobs.ReadOnly = true;
             this.richTextBoxDebugMobs.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBoxDebugMobs.Size = new System.Drawing.Size(530, 170);
+            this.richTextBoxDebugMobs.Size = new System.Drawing.Size(793, 259);
             this.richTextBoxDebugMobs.TabIndex = 21;
             this.richTextBoxDebugMobs.Text = "";
             // 
@@ -393,18 +433,20 @@ partial class Form1
             this.tabPage5.BackColor = System.Drawing.Color.LightGray;
             this.tabPage5.Controls.Add(this.checkBoxShowValidObjectOnly);
             this.tabPage5.Controls.Add(this.richTextBoxDebugObjects);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Location = new System.Drawing.Point(4, 29);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(536, 202);
+            this.tabPage5.Size = new System.Drawing.Size(808, 318);
             this.tabPage5.TabIndex = 5;
             this.tabPage5.Text = "Objects";
             // 
             // checkBoxShowValidObjectOnly
             // 
             this.checkBoxShowValidObjectOnly.AutoSize = true;
-            this.checkBoxShowValidObjectOnly.Location = new System.Drawing.Point(3, 5);
+            this.checkBoxShowValidObjectOnly.Location = new System.Drawing.Point(4, 8);
+            this.checkBoxShowValidObjectOnly.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxShowValidObjectOnly.Name = "checkBoxShowValidObjectOnly";
-            this.checkBoxShowValidObjectOnly.Size = new System.Drawing.Size(203, 17);
+            this.checkBoxShowValidObjectOnly.Size = new System.Drawing.Size(295, 24);
             this.checkBoxShowValidObjectOnly.TabIndex = 23;
             this.checkBoxShowValidObjectOnly.Text = "Show Objects with valid Position Only";
             this.checkBoxShowValidObjectOnly.UseVisualStyleBackColor = true;
@@ -414,20 +456,22 @@ partial class Form1
             this.richTextBoxDebugObjects.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBoxDebugObjects.DetectUrls = false;
-            this.richTextBoxDebugObjects.Location = new System.Drawing.Point(0, 28);
+            this.richTextBoxDebugObjects.Location = new System.Drawing.Point(0, 43);
+            this.richTextBoxDebugObjects.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBoxDebugObjects.Name = "richTextBoxDebugObjects";
             this.richTextBoxDebugObjects.ReadOnly = true;
             this.richTextBoxDebugObjects.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBoxDebugObjects.Size = new System.Drawing.Size(536, 174);
+            this.richTextBoxDebugObjects.Size = new System.Drawing.Size(802, 266);
             this.richTextBoxDebugObjects.TabIndex = 22;
             this.richTextBoxDebugObjects.Text = "";
             // 
             // tabPage6
             // 
             this.tabPage6.Controls.Add(this.richTextBoxDebugMapData);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Location = new System.Drawing.Point(4, 29);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(536, 202);
+            this.tabPage6.Size = new System.Drawing.Size(808, 318);
             this.tabPage6.TabIndex = 3;
             this.tabPage6.Text = "Map Data";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -437,10 +481,11 @@ partial class Form1
             this.richTextBoxDebugMapData.DetectUrls = false;
             this.richTextBoxDebugMapData.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxDebugMapData.Location = new System.Drawing.Point(0, 0);
+            this.richTextBoxDebugMapData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBoxDebugMapData.Name = "richTextBoxDebugMapData";
             this.richTextBoxDebugMapData.ReadOnly = true;
             this.richTextBoxDebugMapData.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.richTextBoxDebugMapData.Size = new System.Drawing.Size(536, 202);
+            this.richTextBoxDebugMapData.Size = new System.Drawing.Size(808, 318);
             this.richTextBoxDebugMapData.TabIndex = 21;
             this.richTextBoxDebugMapData.Text = "";
             // 
@@ -450,186 +495,12 @@ partial class Form1
             this.tabPage7.Controls.Add(this.comboBoxCollisionArea);
             this.tabPage7.Controls.Add(this.label2);
             this.tabPage7.Controls.Add(this.richTextBoxDebugMapCollision);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Location = new System.Drawing.Point(4, 29);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(536, 202);
+            this.tabPage7.Size = new System.Drawing.Size(808, 318);
             this.tabPage7.TabIndex = 4;
             this.tabPage7.Text = "Map Collisions";
-            // 
-            // richTextBoxDebugMapCollision
-            // 
-            this.richTextBoxDebugMapCollision.DetectUrls = false;
-            this.richTextBoxDebugMapCollision.Font = new System.Drawing.Font("Courier New", 1.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBoxDebugMapCollision.Location = new System.Drawing.Point(0, 28);
-            this.richTextBoxDebugMapCollision.Name = "richTextBoxDebugMapCollision";
-            this.richTextBoxDebugMapCollision.ReadOnly = true;
-            this.richTextBoxDebugMapCollision.Size = new System.Drawing.Size(536, 174);
-            this.richTextBoxDebugMapCollision.TabIndex = 21;
-            this.richTextBoxDebugMapCollision.Text = "";
-            this.richTextBoxDebugMapCollision.WordWrap = false;
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.labelGameName,
-            this.toolStripSeparator2,
-            this.labelGames,
-            this.toolStripSeparator3,
-            this.labelGameTime,
-            this.toolStripSeparator4,
-            this.LabelChickenCount,
-            this.toolStripSeparator5,
-            this.LabelDeadCount});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 616);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(552, 23);
-            this.statusStrip1.TabIndex = 101;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // labelGameName
-            // 
-            this.labelGameName.BackColor = System.Drawing.SystemColors.Control;
-            this.labelGameName.Name = "labelGameName";
-            this.labelGameName.Size = new System.Drawing.Size(70, 18);
-            this.labelGameName.Text = "GameName";
-            this.labelGameName.ToolTipText = "Game Name";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 23);
-            // 
-            // labelGames
-            // 
-            this.labelGames.BackColor = System.Drawing.SystemColors.Control;
-            this.labelGames.Name = "labelGames";
-            this.labelGames.Size = new System.Drawing.Size(78, 18);
-            this.labelGames.Text = "GameEntered";
-            this.labelGames.ToolTipText = "Game Entered";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 23);
-            // 
-            // labelGameTime
-            // 
-            this.labelGameTime.BackColor = System.Drawing.SystemColors.Control;
-            this.labelGameTime.Name = "labelGameTime";
-            this.labelGameTime.Size = new System.Drawing.Size(55, 18);
-            this.labelGameTime.Text = "00:00.000";
-            this.labelGameTime.ToolTipText = "Game Timer";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 23);
-            // 
-            // LabelChickenCount
-            // 
-            this.LabelChickenCount.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelChickenCount.Name = "LabelChickenCount";
-            this.LabelChickenCount.Size = new System.Drawing.Size(55, 18);
-            this.LabelChickenCount.Text = "Chickens";
-            this.LabelChickenCount.ToolTipText = "Chickens Count";
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 23);
-            // 
-            // LabelDeadCount
-            // 
-            this.LabelDeadCount.BackColor = System.Drawing.SystemColors.Control;
-            this.LabelDeadCount.Name = "LabelDeadCount";
-            this.LabelDeadCount.Size = new System.Drawing.Size(34, 18);
-            this.LabelDeadCount.Text = "Dead";
-            this.LabelDeadCount.ToolTipText = "Deads Count";
-            // 
-            // buttonPauseResume
-            // 
-            this.buttonPauseResume.Enabled = false;
-            this.buttonPauseResume.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPauseResume.ForeColor = System.Drawing.Color.Blue;
-            this.buttonPauseResume.Image = global::app.Properties.Resources.control_pause;
-            this.buttonPauseResume.Location = new System.Drawing.Point(41, 3);
-            this.buttonPauseResume.Name = "buttonPauseResume";
-            this.buttonPauseResume.Size = new System.Drawing.Size(26, 25);
-            this.buttonPauseResume.TabIndex = 107;
-            this.toolTip1.SetToolTip(this.buttonPauseResume, "Pause/Resume the Bot");
-            this.buttonPauseResume.UseVisualStyleBackColor = true;
-            this.buttonPauseResume.Click += new System.EventHandler(this.buttonPauseResume_Click);
-            // 
-            // buttonUpdate
-            // 
-            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUpdate.ForeColor = System.Drawing.Color.Blue;
-            this.buttonUpdate.Image = global::app.Properties.Resources.Update;
-            this.buttonUpdate.Location = new System.Drawing.Point(193, 3);
-            this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(26, 25);
-            this.buttonUpdate.TabIndex = 106;
-            this.toolTip1.SetToolTip(this.buttonUpdate, "Open github download page for updates");
-            this.buttonUpdate.UseVisualStyleBackColor = true;
-            this.buttonUpdate.Visible = false;
-            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
-            // 
-            // buttonD2LOD
-            // 
-            this.buttonD2LOD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonD2LOD.ForeColor = System.Drawing.Color.Blue;
-            this.buttonD2LOD.Image = global::app.Properties.Resources.Error;
-            this.buttonD2LOD.Location = new System.Drawing.Point(218, 3);
-            this.buttonD2LOD.Name = "buttonD2LOD";
-            this.buttonD2LOD.Size = new System.Drawing.Size(26, 25);
-            this.buttonD2LOD.TabIndex = 105;
-            this.toolTip1.SetToolTip(this.buttonD2LOD, "Diablo2 LOD - 1.13C Help Tool");
-            this.buttonD2LOD.UseVisualStyleBackColor = true;
-            this.buttonD2LOD.Visible = false;
-            this.buttonD2LOD.Click += new System.EventHandler(this.buttonD2LOD_Click);
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Blue;
-            this.button5.Image = global::app.Properties.Resources.Person;
-            this.button5.Location = new System.Drawing.Point(143, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(26, 25);
-            this.button5.TabIndex = 104;
-            this.toolTip1.SetToolTip(this.button5, "Char Settings");
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Blue;
-            this.button4.Image = global::app.Properties.Resources.Equipment;
-            this.button4.Location = new System.Drawing.Point(168, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(26, 25);
-            this.button4.TabIndex = 103;
-            this.toolTip1.SetToolTip(this.button4, "Items + Cubing Settings");
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Blue;
-            this.button3.Image = global::app.Properties.Resources.Application;
-            this.button3.Location = new System.Drawing.Point(118, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(26, 25);
-            this.button3.TabIndex = 102;
-            this.toolTip1.SetToolTip(this.button3, "Bot Settings");
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // folderBrowserDialog1
-            // 
-            this.folderBrowserDialog1.Description = "Select the folder where D2 LOD 1.13C is located";
             // 
             // comboBoxCollisionArea
             // 
@@ -648,27 +519,213 @@ partial class Form1
             "On Ground",
             "In Shop",
             "Others"});
-            this.comboBoxCollisionArea.Location = new System.Drawing.Point(64, 3);
+            this.comboBoxCollisionArea.Location = new System.Drawing.Point(96, 5);
+            this.comboBoxCollisionArea.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxCollisionArea.Name = "comboBoxCollisionArea";
-            this.comboBoxCollisionArea.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCollisionArea.Size = new System.Drawing.Size(180, 28);
             this.comboBoxCollisionArea.TabIndex = 24;
             this.comboBoxCollisionArea.SelectedIndexChanged += new System.EventHandler(this.comboBoxCollisionArea_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 6);
+            this.label2.Location = new System.Drawing.Point(9, 9);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 23;
             this.label2.Text = "Area:";
             // 
+            // richTextBoxDebugMapCollision
+            // 
+            this.richTextBoxDebugMapCollision.DetectUrls = false;
+            this.richTextBoxDebugMapCollision.Font = new System.Drawing.Font("Courier New", 1.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxDebugMapCollision.Location = new System.Drawing.Point(0, 43);
+            this.richTextBoxDebugMapCollision.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.richTextBoxDebugMapCollision.Name = "richTextBoxDebugMapCollision";
+            this.richTextBoxDebugMapCollision.ReadOnly = true;
+            this.richTextBoxDebugMapCollision.Size = new System.Drawing.Size(802, 266);
+            this.richTextBoxDebugMapCollision.TabIndex = 21;
+            this.richTextBoxDebugMapCollision.Text = "";
+            this.richTextBoxDebugMapCollision.WordWrap = false;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.labelGameName,
+            this.toolStripSeparator2,
+            this.labelGames,
+            this.toolStripSeparator3,
+            this.labelGameTime,
+            this.toolStripSeparator4,
+            this.LabelChickenCount,
+            this.toolStripSeparator5,
+            this.LabelDeadCount});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 951);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(995, 32);
+            this.statusStrip1.TabIndex = 101;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // labelGameName
+            // 
+            this.labelGameName.BackColor = System.Drawing.SystemColors.Control;
+            this.labelGameName.Name = "labelGameName";
+            this.labelGameName.Size = new System.Drawing.Size(105, 25);
+            this.labelGameName.Text = "GameName";
+            this.labelGameName.ToolTipText = "Game Name";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 32);
+            // 
+            // labelGames
+            // 
+            this.labelGames.BackColor = System.Drawing.SystemColors.Control;
+            this.labelGames.Name = "labelGames";
+            this.labelGames.Size = new System.Drawing.Size(118, 25);
+            this.labelGames.Text = "GameEntered";
+            this.labelGames.ToolTipText = "Game Entered";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 32);
+            // 
+            // labelGameTime
+            // 
+            this.labelGameTime.BackColor = System.Drawing.SystemColors.Control;
+            this.labelGameTime.Name = "labelGameTime";
+            this.labelGameTime.Size = new System.Drawing.Size(90, 25);
+            this.labelGameTime.Text = "00:00.000";
+            this.labelGameTime.ToolTipText = "Game Timer";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 32);
+            // 
+            // LabelChickenCount
+            // 
+            this.LabelChickenCount.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelChickenCount.Name = "LabelChickenCount";
+            this.LabelChickenCount.Size = new System.Drawing.Size(81, 25);
+            this.LabelChickenCount.Text = "Chickens";
+            this.LabelChickenCount.ToolTipText = "Chickens Count";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 32);
+            // 
+            // LabelDeadCount
+            // 
+            this.LabelDeadCount.BackColor = System.Drawing.SystemColors.Control;
+            this.LabelDeadCount.Name = "LabelDeadCount";
+            this.LabelDeadCount.Size = new System.Drawing.Size(54, 25);
+            this.LabelDeadCount.Text = "Dead";
+            this.LabelDeadCount.ToolTipText = "Deads Count";
+            // 
+            // buttonPauseResume
+            // 
+            this.buttonPauseResume.Enabled = false;
+            this.buttonPauseResume.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPauseResume.ForeColor = System.Drawing.Color.Blue;
+            this.buttonPauseResume.Image = global::app.Properties.Resources.control_pause;
+            this.buttonPauseResume.Location = new System.Drawing.Point(62, 5);
+            this.buttonPauseResume.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonPauseResume.Name = "buttonPauseResume";
+            this.buttonPauseResume.Size = new System.Drawing.Size(39, 38);
+            this.buttonPauseResume.TabIndex = 107;
+            this.toolTip1.SetToolTip(this.buttonPauseResume, "Pause/Resume the Bot");
+            this.buttonPauseResume.UseVisualStyleBackColor = true;
+            this.buttonPauseResume.Click += new System.EventHandler(this.buttonPauseResume_Click);
+            // 
+            // buttonUpdate
+            // 
+            this.buttonUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUpdate.ForeColor = System.Drawing.Color.Blue;
+            this.buttonUpdate.Image = global::app.Properties.Resources.Update;
+            this.buttonUpdate.Location = new System.Drawing.Point(290, 5);
+            this.buttonUpdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonUpdate.Name = "buttonUpdate";
+            this.buttonUpdate.Size = new System.Drawing.Size(39, 38);
+            this.buttonUpdate.TabIndex = 106;
+            this.toolTip1.SetToolTip(this.buttonUpdate, "Open github download page for updates");
+            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.Visible = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // buttonD2LOD
+            // 
+            this.buttonD2LOD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonD2LOD.ForeColor = System.Drawing.Color.Blue;
+            this.buttonD2LOD.Image = global::app.Properties.Resources.Error;
+            this.buttonD2LOD.Location = new System.Drawing.Point(327, 5);
+            this.buttonD2LOD.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonD2LOD.Name = "buttonD2LOD";
+            this.buttonD2LOD.Size = new System.Drawing.Size(39, 38);
+            this.buttonD2LOD.TabIndex = 105;
+            this.toolTip1.SetToolTip(this.buttonD2LOD, "Diablo2 LOD - 1.13C Help Tool");
+            this.buttonD2LOD.UseVisualStyleBackColor = true;
+            this.buttonD2LOD.Visible = false;
+            this.buttonD2LOD.Click += new System.EventHandler(this.buttonD2LOD_Click);
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Blue;
+            this.button5.Image = global::app.Properties.Resources.Person;
+            this.button5.Location = new System.Drawing.Point(214, 5);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(39, 38);
+            this.button5.TabIndex = 104;
+            this.toolTip1.SetToolTip(this.button5, "Char Settings");
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Blue;
+            this.button4.Image = global::app.Properties.Resources.Equipment;
+            this.button4.Location = new System.Drawing.Point(252, 5);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(39, 38);
+            this.button4.TabIndex = 103;
+            this.toolTip1.SetToolTip(this.button4, "Items + Cubing Settings");
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.Blue;
+            this.button3.Image = global::app.Properties.Resources.Application;
+            this.button3.Location = new System.Drawing.Point(177, 5);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(39, 38);
+            this.button3.TabIndex = 102;
+            this.toolTip1.SetToolTip(this.button3, "Bot Settings");
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // folderBrowserDialog1
+            // 
+            this.folderBrowserDialog1.Description = "Select the folder where D2 LOD 1.13C is located";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(552, 639);
+            this.ClientSize = new System.Drawing.Size(995, 983);
             this.Controls.Add(this.buttonPauseResume);
             this.Controls.Add(this.buttonUpdate);
             this.Controls.Add(this.buttonD2LOD);
@@ -683,6 +740,7 @@ partial class Form1
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "D2R - BMBot";
@@ -765,5 +823,6 @@ partial class Form1
     private System.Windows.Forms.RichTextBox richTextBoSoldLogs;
     public System.Windows.Forms.ComboBox comboBoxCollisionArea;
     private System.Windows.Forms.Label label2;
+    private System.Windows.Forms.ComboBox comboBoxResolution;
 }
 

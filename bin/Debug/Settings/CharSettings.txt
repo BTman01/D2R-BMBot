@@ -5,4 +5,4 @@
 //PaladinHammer
 //SorceressBlizzard
 //#######################################
-RunOnChar=PaladinHammer
+RunOnChar=SorceressBlizzard

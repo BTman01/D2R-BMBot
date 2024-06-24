@@ -1,2 +1,2 @@
-RunNumber=1
-D2_LOD_113C_Path=
+RunNumber=30
+D2_LOD_113C_Path=C:\Diablo2\Diablo2

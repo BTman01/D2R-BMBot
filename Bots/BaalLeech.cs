@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static MapAreaStruc;
+using System.Diagnostics;
 
 public class BaalLeech
 {
@@ -50,9 +51,53 @@ public class BaalLeech
     {
         Form1_0 = form1_1;
     }
+    public static class Logger
+    {
+        private static readonly TraceSource traceSource = new TraceSource("BaalLeechLogger");
 
+        static Logger()
+        {
+            // Configure the trace source
+            traceSource.Switch = new SourceSwitch("SourceSwitch", "Verbose");
+            traceSource.Listeners.Add(new TextWriterTraceListener("BaalLeech.log"));
+            traceSource.Listeners.Add(new ConsoleTraceListener());
+            traceSource.Listeners["Default"].TraceOutputOptions = TraceOptions.DateTime | TraceOptions.Timestamp | TraceOptions.ProcessId | TraceOptions.ThreadId;
+        }
+
+        public static void LogInfo(string message)
+        {
+            traceSource.TraceEvent(TraceEventType.Information, 0, message);
+            traceSource.Flush();
+        }
+
+        public static void LogWarning(string message)
+        {
+            traceSource.TraceEvent(TraceEventType.Warning, 0, message);
+            traceSource.Flush();
+        }
+
+        public static void LogError(string message)
+        {
+            traceSource.TraceEvent(TraceEventType.Error, 0, message);
+            traceSource.Flush();
+        }
+
+        public static void LogCritical(string message)
+        {
+            traceSource.TraceEvent(TraceEventType.Critical, 0, message);
+            traceSource.Flush();
+        }
+
+        public static void LogVerbose(string message)
+        {
+            traceSource.TraceEvent(TraceEventType.Verbose, 0, message);
+            traceSource.Flush();
+        }
+    }
     public void RunScriptNOTInGame()
     {
+        Logger.LogInfo("Starting RunScriptNOTInGame");
+
         TimeWaitedForTP = 0;
         CurrentStep = 0;
         LastWave4Pointer = 0;
@@ -83,6 +128,8 @@ public class BaalLeech
             SearchSameGame = LastGameName.Substring(0, LastGameName.Length - 2);
         }
 
+        Logger.LogVerbose($"LastGameName: {LastGameName}, SearchSameGame: {SearchSameGame}");
+
         if (Form1_0.GameStruc_0.AllGamesNames.Count > 0)
         {
             List<int> PossibleGamesIndex = new List<int>();
@@ -91,6 +138,7 @@ public class BaalLeech
             {
                 if (!Form1_0.Running)
                 {
+                    Logger.LogWarning("Script stopped running.");
                     break;
                 }
 
@@ -116,35 +164,41 @@ public class BaalLeech
                 }
             }
 
-            //##
+            Logger.LogVerbose($"PossibleGamesIndex count: {PossibleGamesIndex.Count}");
+
             if (PossibleGamesIndex.Count > 0)
             {
                 for (int i = 0; i < PossibleGamesIndex.Count; i++)
                 {
                     if (!Form1_0.Running)
                     {
+                        Logger.LogWarning("Script stopped running.");
                         break;
                     }
 
-                    Form1_0.SetGameStatus("SEARCHING:" + Form1_0.GameStruc_0.AllGamesNames[PossibleGamesIndex[i]]);
+                    Logger.LogInfo("SEARCHING: " + Form1_0.GameStruc_0.AllGamesNames[PossibleGamesIndex[i]]);
                     Form1_0.method_1("Checking Game: " + PossibleGamesIndex[i], Color.Black);
 
                     Form1_0.GameStruc_0.SelectGame(PossibleGamesIndex[i], false);
+                    Logger.LogVerbose($"Selected game: {Form1_0.GameStruc_0.SelectedGameName}");
+
                     if (!Form1_0.GameStruc_0.SelectedGameName.Contains(Form1_0.GameStruc_0.AllGamesNames[PossibleGamesIndex[i]]))
                     {
+                        Logger.LogWarning($"Game name mismatch: {Form1_0.GameStruc_0.SelectedGameName} != {Form1_0.GameStruc_0.AllGamesNames[PossibleGamesIndex[i]]}");
                         continue;
                     }
+
                     if (Form1_0.GameStruc_0.SelectedGameTime < MaxGameTimeToEnter)
                     {
                         Form1_0.GameStruc_0.SelectGame(PossibleGamesIndex[i], true);
                         Form1_0.SetGameStatus("LOADING GAME");
-                        //Form1_0.WaitDelay(300);
+                        Logger.LogInfo($"Loading game: {Form1_0.GameStruc_0.AllGamesNames[PossibleGamesIndex[i]]}");
                         EnteredGammme = true;
                         break;
                     }
                     else
                     {
-                        Form1_0.method_1("Game: " + Form1_0.GameStruc_0.AllGamesNames[PossibleGamesIndex[i]] + " exceed MaxGameTime of " + (MaxGameTimeToEnter / 60) + "mins", Color.DarkOrange);
+                        Logger.LogWarning($"Game: {Form1_0.GameStruc_0.AllGamesNames[PossibleGamesIndex[i]]} exceed MaxGameTime of {MaxGameTimeToEnter / 60} mins");
                         Form1_0.GameStruc_0.AllGamesTriedNames.Add(Form1_0.GameStruc_0.AllGamesNames[PossibleGamesIndex[i]]);
                     }
                 }
@@ -155,10 +209,17 @@ public class BaalLeech
                 if (SearchSameGame != "")
                 {
                     SameGameRetry++;
+                    Logger.LogInfo($"Retrying same game. Retry count: {SameGameRetry}");
                 }
             }
         }
+        else
+        {
+            Logger.LogError("No games found matching criteria.");
+        }
     }
+
+
 
     public void RunScript()
     {

@@ -1876,7 +1876,7 @@ public partial class Form1 : Form
             Form1_0.KeyMouse_0.MouseClicc(1190, 990); //clic 'salon' if not in server
             Form1_0.WaitDelay(10);
 
-            Form1_0.KeyMouse_0.MouseClicc(1415, 65);  //clic 'join game' if not in game list area
+            Form1_0.KeyMouse_0.MouseClicc(1415, 670);  //clic 'join game' if not in game list area
             Form1_0.WaitDelay(10);
 
             Form1_0.KeyMouse_0.MouseClicc(1720, 210); //clic refresh
@@ -1958,25 +1958,19 @@ public partial class Form1 : Form
 
     public void method_GameTimeLabel(string string_3)
     {
-        //try
-        //{
-        /*if (Form1_0.labelGameTime.InvokeRequired)
-        {
-            // Call this same method but append THREAD2 to the text
-            Action safeWrite = delegate { method_GameTimeLabel(string_3); };
-            Form1_0.labelGameTime.Invoke(safeWrite);
-        }
-        else
-        {
-            Form1_0.labelGameTime.Text = string_3;
-            Application.DoEvents();
-        }*/
         try
         {
             CurrentGameTime = string_3;
-            Form1_0.labelGameTime.Text = string_3;
+            if (Form1_0 != null && Form1_0.labelGameTime != null)
+            {
+                Form1_0.labelGameTime.Text = string_3;
+            }
         }
-        catch { }
+        catch (Exception ex)
+        {
+            // Log the exception or handle it as needed
+            Console.WriteLine("Error updating game time label: " + ex.Message);
+        }
     }
 
     public void WaitDelay(int DelayTime)

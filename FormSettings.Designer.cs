@@ -251,9 +251,10 @@ partial class FormSettings
             listViewItem27,
             listViewItem28,
             listViewItem29});
-            this.listViewRunScripts.Location = new System.Drawing.Point(12, 168);
+            this.listViewRunScripts.Location = new System.Drawing.Point(18, 258);
+            this.listViewRunScripts.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listViewRunScripts.Name = "listViewRunScripts";
-            this.listViewRunScripts.Size = new System.Drawing.Size(225, 276);
+            this.listViewRunScripts.Size = new System.Drawing.Size(336, 422);
             this.listViewRunScripts.TabIndex = 0;
             this.toolTip1.SetToolTip(this.listViewRunScripts, "Double Clic on a Run script to edit it\'s features (if there is any)");
             this.listViewRunScripts.UseCompatibleStateImageBehavior = false;
@@ -271,9 +272,10 @@ partial class FormSettings
             this.label1Run.AutoSize = true;
             this.label1Run.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1Run.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1Run.Location = new System.Drawing.Point(47, 129);
+            this.label1Run.Location = new System.Drawing.Point(70, 198);
+            this.label1Run.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1Run.Name = "label1Run";
-            this.label1Run.Size = new System.Drawing.Size(134, 16);
+            this.label1Run.Size = new System.Drawing.Size(190, 25);
             this.label1Run.TabIndex = 1;
             this.label1Run.Text = "Select Run Scripts";
             // 
@@ -282,9 +284,10 @@ partial class FormSettings
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(50, 86);
+            this.label2.Location = new System.Drawing.Point(75, 132);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 16);
+            this.label2.Size = new System.Drawing.Size(200, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Select Lobby Script";
             // 
@@ -299,18 +302,21 @@ partial class FormSettings
             this.groupBox1.Controls.Add(this.textBoxGamePass);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.textBoxGameName);
-            this.groupBox1.Location = new System.Drawing.Point(3, 481);
+            this.groupBox1.Location = new System.Drawing.Point(4, 740);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(244, 113);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(366, 174);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Game Maker Settings";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(180, 60);
+            this.button1.Location = new System.Drawing.Point(270, 92);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 23);
+            this.button1.Size = new System.Drawing.Size(81, 35);
             this.button1.TabIndex = 8;
             this.button1.Text = "Reset";
             this.button1.UseVisualStyleBackColor = true;
@@ -318,7 +324,8 @@ partial class FormSettings
             // 
             // numericUpDownRunNumber
             // 
-            this.numericUpDownRunNumber.Location = new System.Drawing.Point(85, 62);
+            this.numericUpDownRunNumber.Location = new System.Drawing.Point(128, 95);
+            this.numericUpDownRunNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownRunNumber.Maximum = new decimal(new int[] {
             99999,
             0,
@@ -330,7 +337,7 @@ partial class FormSettings
             0,
             0});
             this.numericUpDownRunNumber.Name = "numericUpDownRunNumber";
-            this.numericUpDownRunNumber.Size = new System.Drawing.Size(89, 20);
+            this.numericUpDownRunNumber.Size = new System.Drawing.Size(134, 26);
             this.numericUpDownRunNumber.TabIndex = 7;
             this.toolTip1.SetToolTip(this.numericUpDownRunNumber, "Acutal Run Numer (will increase by one each time a game end)");
             this.numericUpDownRunNumber.Value = new decimal(new int[] {
@@ -342,18 +349,20 @@ partial class FormSettings
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 64);
+            this.label6.Location = new System.Drawing.Point(14, 98);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 13);
+            this.label6.Size = new System.Drawing.Size(103, 20);
             this.label6.TabIndex = 6;
             this.label6.Text = "Run Number:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 87);
+            this.label5.Location = new System.Drawing.Point(14, 134);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 13);
+            this.label5.Size = new System.Drawing.Size(73, 20);
             this.label5.TabIndex = 5;
             this.label5.Text = "Difficulty:";
             // 
@@ -364,56 +373,62 @@ partial class FormSettings
             "Normal",
             "Nightmare",
             "Hell"});
-            this.comboBoxDifficulty.Location = new System.Drawing.Point(85, 84);
+            this.comboBoxDifficulty.Location = new System.Drawing.Point(128, 129);
+            this.comboBoxDifficulty.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxDifficulty.Name = "comboBoxDifficulty";
-            this.comboBoxDifficulty.Size = new System.Drawing.Size(149, 21);
+            this.comboBoxDifficulty.Size = new System.Drawing.Size(222, 28);
             this.comboBoxDifficulty.TabIndex = 4;
             this.toolTip1.SetToolTip(this.comboBoxDifficulty, "Select your Game Difficulty");
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 43);
+            this.label4.Location = new System.Drawing.Point(14, 66);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.Size = new System.Drawing.Size(96, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Game Pass:";
             // 
             // textBoxGamePass
             // 
-            this.textBoxGamePass.Location = new System.Drawing.Point(85, 40);
+            this.textBoxGamePass.Location = new System.Drawing.Point(128, 62);
+            this.textBoxGamePass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxGamePass.Name = "textBoxGamePass";
-            this.textBoxGamePass.Size = new System.Drawing.Size(149, 20);
+            this.textBoxGamePass.Size = new System.Drawing.Size(222, 26);
             this.textBoxGamePass.TabIndex = 2;
             this.toolTip1.SetToolTip(this.textBoxGamePass, "Set your Game Pass here");
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 20);
+            this.label3.Location = new System.Drawing.Point(14, 31);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.Size = new System.Drawing.Size(103, 20);
             this.label3.TabIndex = 1;
             this.label3.Text = "Game Name:";
             // 
             // textBoxGameName
             // 
-            this.textBoxGameName.Location = new System.Drawing.Point(85, 17);
+            this.textBoxGameName.Location = new System.Drawing.Point(128, 26);
+            this.textBoxGameName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxGameName.Name = "textBoxGameName";
-            this.textBoxGameName.Size = new System.Drawing.Size(149, 20);
+            this.textBoxGameName.Size = new System.Drawing.Size(222, 26);
             this.textBoxGameName.TabIndex = 0;
             this.toolTip1.SetToolTip(this.textBoxGameName, "Set your Game Name here");
             // 
             // numericUpDownMaxTime
             // 
-            this.numericUpDownMaxTime.Location = new System.Drawing.Point(162, 452);
+            this.numericUpDownMaxTime.Location = new System.Drawing.Point(243, 695);
+            this.numericUpDownMaxTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownMaxTime.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
             this.numericUpDownMaxTime.Name = "numericUpDownMaxTime";
-            this.numericUpDownMaxTime.Size = new System.Drawing.Size(58, 20);
+            this.numericUpDownMaxTime.Size = new System.Drawing.Size(87, 26);
             this.numericUpDownMaxTime.TabIndex = 10;
             this.numericUpDownMaxTime.Value = new decimal(new int[] {
             8,
@@ -424,9 +439,10 @@ partial class FormSettings
             // label7MaxTime
             // 
             this.label7MaxTime.AutoSize = true;
-            this.label7MaxTime.Location = new System.Drawing.Point(27, 454);
+            this.label7MaxTime.Location = new System.Drawing.Point(40, 698);
+            this.label7MaxTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7MaxTime.Name = "label7MaxTime";
-            this.label7MaxTime.Size = new System.Drawing.Size(132, 13);
+            this.label7MaxTime.Size = new System.Drawing.Size(198, 20);
             this.label7MaxTime.TabIndex = 9;
             this.label7MaxTime.Text = "Max Game Time (minutes):";
             // 
@@ -439,9 +455,10 @@ partial class FormSettings
             "Baal Search (Leech)",
             "No Lobby Script",
             "Single Player Script"});
-            this.comboBoxLobby.Location = new System.Drawing.Point(12, 105);
+            this.comboBoxLobby.Location = new System.Drawing.Point(18, 162);
+            this.comboBoxLobby.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxLobby.Name = "comboBoxLobby";
-            this.comboBoxLobby.Size = new System.Drawing.Size(226, 21);
+            this.comboBoxLobby.Size = new System.Drawing.Size(337, 28);
             this.comboBoxLobby.TabIndex = 9;
             this.toolTip1.SetToolTip(this.comboBoxLobby, "Select the script to perform inside the Game Lobby (Create or Search for games)");
             this.comboBoxLobby.SelectedIndexChanged += new System.EventHandler(this.comboBoxLobby_SelectedIndexChanged);
@@ -451,17 +468,19 @@ partial class FormSettings
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label8.Location = new System.Drawing.Point(50, 38);
+            this.label8.Location = new System.Drawing.Point(75, 58);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(137, 16);
+            this.label8.Size = new System.Drawing.Size(203, 25);
             this.label8.TabIndex = 10;
             this.label8.Text = "D2 LOD 1.13C Path";
             // 
             // textBoxD2Path
             // 
-            this.textBoxD2Path.Location = new System.Drawing.Point(12, 57);
+            this.textBoxD2Path.Location = new System.Drawing.Point(18, 88);
+            this.textBoxD2Path.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxD2Path.Name = "textBoxD2Path";
-            this.textBoxD2Path.Size = new System.Drawing.Size(225, 20);
+            this.textBoxD2Path.Size = new System.Drawing.Size(336, 26);
             this.textBoxD2Path.TabIndex = 9;
             this.toolTip1.SetToolTip(this.textBoxD2Path, "Set the Path where DiabloII - Lord of Desctruction 1.13C is located");
             // 
@@ -510,9 +529,10 @@ partial class FormSettings
             listViewItem45,
             listViewItem46,
             listViewItem47});
-            this.listViewRush.Location = new System.Drawing.Point(279, 168);
+            this.listViewRush.Location = new System.Drawing.Point(418, 258);
+            this.listViewRush.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listViewRush.Name = "listViewRush";
-            this.listViewRush.Size = new System.Drawing.Size(225, 270);
+            this.listViewRush.Size = new System.Drawing.Size(336, 413);
             this.listViewRush.TabIndex = 11;
             this.listViewRush.UseCompatibleStateImageBehavior = false;
             this.listViewRush.View = System.Windows.Forms.View.Details;
@@ -526,9 +546,10 @@ partial class FormSettings
             // 
             this.checkBoxRush.AutoSize = true;
             this.checkBoxRush.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxRush.Location = new System.Drawing.Point(23, 151);
+            this.checkBoxRush.Location = new System.Drawing.Point(34, 232);
+            this.checkBoxRush.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxRush.Name = "checkBoxRush";
-            this.checkBoxRush.Size = new System.Drawing.Size(203, 17);
+            this.checkBoxRush.Size = new System.Drawing.Size(296, 24);
             this.checkBoxRush.TabIndex = 12;
             this.checkBoxRush.Text = "Show and Run on Rush Scripts";
             this.toolTip1.SetToolTip(this.checkBoxRush, "Enable this for the Bot to Run with Rush Scripts");
@@ -538,18 +559,20 @@ partial class FormSettings
             // label1LeechName
             // 
             this.label1LeechName.AutoSize = true;
-            this.label1LeechName.Location = new System.Drawing.Point(9, 455);
+            this.label1LeechName.Location = new System.Drawing.Point(14, 700);
+            this.label1LeechName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1LeechName.Name = "label1LeechName";
-            this.label1LeechName.Size = new System.Drawing.Size(80, 13);
+            this.label1LeechName.Size = new System.Drawing.Size(117, 20);
             this.label1LeechName.TabIndex = 9;
             this.label1LeechName.Text = "Leecher Name:";
             this.label1LeechName.Visible = false;
             // 
             // textBox1LeechName
             // 
-            this.textBox1LeechName.Location = new System.Drawing.Point(88, 452);
+            this.textBox1LeechName.Location = new System.Drawing.Point(132, 695);
+            this.textBox1LeechName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1LeechName.Name = "textBox1LeechName";
-            this.textBox1LeechName.Size = new System.Drawing.Size(149, 20);
+            this.textBox1LeechName.Size = new System.Drawing.Size(222, 26);
             this.textBox1LeechName.TabIndex = 9;
             this.toolTip1.SetToolTip(this.textBox1LeechName, "Set the Player name of who follow you for the Rush");
             this.textBox1LeechName.Visible = false;
@@ -559,9 +582,10 @@ partial class FormSettings
             this.checkBoxShowOverlay.AutoSize = true;
             this.checkBoxShowOverlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxShowOverlay.ForeColor = System.Drawing.Color.Red;
-            this.checkBoxShowOverlay.Location = new System.Drawing.Point(55, 599);
+            this.checkBoxShowOverlay.Location = new System.Drawing.Point(82, 922);
+            this.checkBoxShowOverlay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxShowOverlay.Name = "checkBoxShowOverlay";
-            this.checkBoxShowOverlay.Size = new System.Drawing.Size(110, 17);
+            this.checkBoxShowOverlay.Size = new System.Drawing.Size(160, 24);
             this.checkBoxShowOverlay.TabIndex = 14;
             this.checkBoxShowOverlay.Text = "Show Overlays";
             this.toolTip1.SetToolTip(this.checkBoxShowOverlay, "Show Graphics Overlay (Maphack, Bot Infos, Etc..)");
@@ -570,17 +594,19 @@ partial class FormSettings
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 646);
+            this.label1.Location = new System.Drawing.Point(12, 994);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 13);
+            this.label1.Size = new System.Drawing.Size(151, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Start/Stop Shortcut:";
             // 
             // buttonBaalApply
             // 
-            this.buttonBaalApply.Location = new System.Drawing.Point(64, 246);
+            this.buttonBaalApply.Location = new System.Drawing.Point(96, 378);
+            this.buttonBaalApply.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonBaalApply.Name = "buttonBaalApply";
-            this.buttonBaalApply.Size = new System.Drawing.Size(75, 23);
+            this.buttonBaalApply.Size = new System.Drawing.Size(112, 35);
             this.buttonBaalApply.TabIndex = 2;
             this.buttonBaalApply.Text = "Apply";
             this.toolTip1.SetToolTip(this.buttonBaalApply, "Apply and Leave this menu");
@@ -590,9 +616,10 @@ partial class FormSettings
             // checkBoxKillBaal
             // 
             this.checkBoxKillBaal.AutoSize = true;
-            this.checkBoxKillBaal.Location = new System.Drawing.Point(27, 33);
+            this.checkBoxKillBaal.Location = new System.Drawing.Point(40, 51);
+            this.checkBoxKillBaal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxKillBaal.Name = "checkBoxKillBaal";
-            this.checkBoxKillBaal.Size = new System.Drawing.Size(63, 17);
+            this.checkBoxKillBaal.Size = new System.Drawing.Size(90, 24);
             this.checkBoxKillBaal.TabIndex = 1;
             this.checkBoxKillBaal.Text = "Kill Baal";
             this.toolTip1.SetToolTip(this.checkBoxKillBaal, "Enable this to Kill Baal");
@@ -601,9 +628,10 @@ partial class FormSettings
             // checkBoxBaalSafeHealing
             // 
             this.checkBoxBaalSafeHealing.AutoSize = true;
-            this.checkBoxBaalSafeHealing.Location = new System.Drawing.Point(27, 50);
+            this.checkBoxBaalSafeHealing.Location = new System.Drawing.Point(40, 77);
+            this.checkBoxBaalSafeHealing.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxBaalSafeHealing.Name = "checkBoxBaalSafeHealing";
-            this.checkBoxBaalSafeHealing.Size = new System.Drawing.Size(72, 17);
+            this.checkBoxBaalSafeHealing.Size = new System.Drawing.Size(106, 24);
             this.checkBoxBaalSafeHealing.TabIndex = 4;
             this.checkBoxBaalSafeHealing.Text = "Yolo Strat";
             this.toolTip1.SetToolTip(this.checkBoxBaalSafeHealing, "Enable this to use a Safer Strategy");
@@ -611,38 +639,42 @@ partial class FormSettings
             // 
             // numericUpDownBaalLeaveMobsCount
             // 
-            this.numericUpDownBaalLeaveMobsCount.Location = new System.Drawing.Point(132, 68);
+            this.numericUpDownBaalLeaveMobsCount.Location = new System.Drawing.Point(198, 105);
+            this.numericUpDownBaalLeaveMobsCount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownBaalLeaveMobsCount.Name = "numericUpDownBaalLeaveMobsCount";
-            this.numericUpDownBaalLeaveMobsCount.Size = new System.Drawing.Size(51, 20);
+            this.numericUpDownBaalLeaveMobsCount.Size = new System.Drawing.Size(76, 26);
             this.numericUpDownBaalLeaveMobsCount.TabIndex = 6;
             this.toolTip1.SetToolTip(this.numericUpDownBaalLeaveMobsCount, "Leave the Game if this Mobs Count is reached (All ID\'s)");
             // 
             // numericUpDownBaalMobID
             // 
-            this.numericUpDownBaalMobID.Location = new System.Drawing.Point(51, 14);
+            this.numericUpDownBaalMobID.Location = new System.Drawing.Point(76, 22);
+            this.numericUpDownBaalMobID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownBaalMobID.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
             this.numericUpDownBaalMobID.Name = "numericUpDownBaalMobID";
-            this.numericUpDownBaalMobID.Size = new System.Drawing.Size(46, 20);
+            this.numericUpDownBaalMobID.Size = new System.Drawing.Size(69, 26);
             this.numericUpDownBaalMobID.TabIndex = 8;
             this.toolTip1.SetToolTip(this.numericUpDownBaalMobID, "Set the Mob ID to check for leaving the Game if the count is reached");
             // 
             // numericUpDownBaalMobCount
             // 
-            this.numericUpDownBaalMobCount.Location = new System.Drawing.Point(144, 14);
+            this.numericUpDownBaalMobCount.Location = new System.Drawing.Point(216, 22);
+            this.numericUpDownBaalMobCount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownBaalMobCount.Name = "numericUpDownBaalMobCount";
-            this.numericUpDownBaalMobCount.Size = new System.Drawing.Size(46, 20);
+            this.numericUpDownBaalMobCount.Size = new System.Drawing.Size(69, 26);
             this.numericUpDownBaalMobCount.TabIndex = 10;
             this.toolTip1.SetToolTip(this.numericUpDownBaalMobCount, "Set the Mob Count to check for the current Mob ID");
             // 
             // buttonBaalAddMob
             // 
-            this.buttonBaalAddMob.Location = new System.Drawing.Point(33, 38);
+            this.buttonBaalAddMob.Location = new System.Drawing.Point(50, 58);
+            this.buttonBaalAddMob.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonBaalAddMob.Name = "buttonBaalAddMob";
-            this.buttonBaalAddMob.Size = new System.Drawing.Size(66, 23);
+            this.buttonBaalAddMob.Size = new System.Drawing.Size(99, 35);
             this.buttonBaalAddMob.TabIndex = 11;
             this.buttonBaalAddMob.Text = "Add";
             this.toolTip1.SetToolTip(this.buttonBaalAddMob, "Add the Mob ID and Count to the Checking list");
@@ -651,9 +683,10 @@ partial class FormSettings
             // 
             // buttonBaalClearMob
             // 
-            this.buttonBaalClearMob.Location = new System.Drawing.Point(106, 38);
+            this.buttonBaalClearMob.Location = new System.Drawing.Point(159, 58);
+            this.buttonBaalClearMob.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonBaalClearMob.Name = "buttonBaalClearMob";
-            this.buttonBaalClearMob.Size = new System.Drawing.Size(66, 23);
+            this.buttonBaalClearMob.Size = new System.Drawing.Size(99, 35);
             this.buttonBaalClearMob.TabIndex = 12;
             this.buttonBaalClearMob.Text = "Clear List";
             this.toolTip1.SetToolTip(this.buttonBaalClearMob, "Clear All the Mobs ID and Counts from the Checking List");
@@ -665,18 +698,20 @@ partial class FormSettings
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(206, 128);
+            this.label13.Location = new System.Drawing.Point(309, 197);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(14, 20);
+            this.label13.Size = new System.Drawing.Size(20, 29);
             this.label13.TabIndex = 16;
             this.label13.Text = "!";
             this.toolTip1.SetToolTip(this.label13, "Double Clic on a Run script to edit it\'s features (if there is any)");
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(61, 219);
+            this.button3.Location = new System.Drawing.Point(92, 337);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(112, 35);
             this.button3.TabIndex = 12;
             this.button3.Text = "Apply";
             this.toolTip1.SetToolTip(this.button3, "Apply and Leave this menu");
@@ -686,9 +721,10 @@ partial class FormSettings
             // checkBoxOverlayShowMobs
             // 
             this.checkBoxOverlayShowMobs.AutoSize = true;
-            this.checkBoxOverlayShowMobs.Location = new System.Drawing.Point(14, 33);
+            this.checkBoxOverlayShowMobs.Location = new System.Drawing.Point(21, 51);
+            this.checkBoxOverlayShowMobs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxOverlayShowMobs.Name = "checkBoxOverlayShowMobs";
-            this.checkBoxOverlayShowMobs.Size = new System.Drawing.Size(170, 17);
+            this.checkBoxOverlayShowMobs.Size = new System.Drawing.Size(253, 24);
             this.checkBoxOverlayShowMobs.TabIndex = 12;
             this.checkBoxOverlayShowMobs.Text = "Show Mobs (Create small lags)";
             this.toolTip1.SetToolTip(this.checkBoxOverlayShowMobs, "Enable this to Kill Baal");
@@ -697,9 +733,10 @@ partial class FormSettings
             // checkBoxOverlayShowWP
             // 
             this.checkBoxOverlayShowWP.AutoSize = true;
-            this.checkBoxOverlayShowWP.Location = new System.Drawing.Point(14, 50);
+            this.checkBoxOverlayShowWP.Location = new System.Drawing.Point(21, 77);
+            this.checkBoxOverlayShowWP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxOverlayShowWP.Name = "checkBoxOverlayShowWP";
-            this.checkBoxOverlayShowWP.Size = new System.Drawing.Size(79, 17);
+            this.checkBoxOverlayShowWP.Size = new System.Drawing.Size(112, 24);
             this.checkBoxOverlayShowWP.TabIndex = 13;
             this.checkBoxOverlayShowWP.Text = "Show WPs";
             this.toolTip1.SetToolTip(this.checkBoxOverlayShowWP, "Enable this to Kill Baal");
@@ -708,9 +745,10 @@ partial class FormSettings
             // checkBoxOverlayShowGoodChest
             // 
             this.checkBoxOverlayShowGoodChest.AutoSize = true;
-            this.checkBoxOverlayShowGoodChest.Location = new System.Drawing.Point(14, 67);
+            this.checkBoxOverlayShowGoodChest.Location = new System.Drawing.Point(21, 103);
+            this.checkBoxOverlayShowGoodChest.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxOverlayShowGoodChest.Name = "checkBoxOverlayShowGoodChest";
-            this.checkBoxOverlayShowGoodChest.Size = new System.Drawing.Size(117, 17);
+            this.checkBoxOverlayShowGoodChest.Size = new System.Drawing.Size(173, 24);
             this.checkBoxOverlayShowGoodChest.TabIndex = 14;
             this.checkBoxOverlayShowGoodChest.Text = "Show Good Chests";
             this.toolTip1.SetToolTip(this.checkBoxOverlayShowGoodChest, "Enable this to Kill Baal");
@@ -719,9 +757,10 @@ partial class FormSettings
             // checkBoxOverlayShowLogs
             // 
             this.checkBoxOverlayShowLogs.AutoSize = true;
-            this.checkBoxOverlayShowLogs.Location = new System.Drawing.Point(14, 84);
+            this.checkBoxOverlayShowLogs.Location = new System.Drawing.Point(21, 129);
+            this.checkBoxOverlayShowLogs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxOverlayShowLogs.Name = "checkBoxOverlayShowLogs";
-            this.checkBoxOverlayShowLogs.Size = new System.Drawing.Size(79, 17);
+            this.checkBoxOverlayShowLogs.Size = new System.Drawing.Size(114, 24);
             this.checkBoxOverlayShowLogs.TabIndex = 15;
             this.checkBoxOverlayShowLogs.Text = "Show Logs";
             this.toolTip1.SetToolTip(this.checkBoxOverlayShowLogs, "Enable this to Kill Baal");
@@ -730,9 +769,10 @@ partial class FormSettings
             // checkBoxOverlayShowBotInfos
             // 
             this.checkBoxOverlayShowBotInfos.AutoSize = true;
-            this.checkBoxOverlayShowBotInfos.Location = new System.Drawing.Point(14, 101);
+            this.checkBoxOverlayShowBotInfos.Location = new System.Drawing.Point(21, 155);
+            this.checkBoxOverlayShowBotInfos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxOverlayShowBotInfos.Name = "checkBoxOverlayShowBotInfos";
-            this.checkBoxOverlayShowBotInfos.Size = new System.Drawing.Size(132, 17);
+            this.checkBoxOverlayShowBotInfos.Size = new System.Drawing.Size(197, 24);
             this.checkBoxOverlayShowBotInfos.TabIndex = 16;
             this.checkBoxOverlayShowBotInfos.Text = "Show Bot Informations";
             this.toolTip1.SetToolTip(this.checkBoxOverlayShowBotInfos, "Enable this to Kill Baal");
@@ -741,9 +781,10 @@ partial class FormSettings
             // checkBoxOverlayShowUnitsCount
             // 
             this.checkBoxOverlayShowUnitsCount.AutoSize = true;
-            this.checkBoxOverlayShowUnitsCount.Location = new System.Drawing.Point(14, 186);
+            this.checkBoxOverlayShowUnitsCount.Location = new System.Drawing.Point(21, 286);
+            this.checkBoxOverlayShowUnitsCount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxOverlayShowUnitsCount.Name = "checkBoxOverlayShowUnitsCount";
-            this.checkBoxOverlayShowUnitsCount.Size = new System.Drawing.Size(139, 17);
+            this.checkBoxOverlayShowUnitsCount.Size = new System.Drawing.Size(204, 24);
             this.checkBoxOverlayShowUnitsCount.TabIndex = 21;
             this.checkBoxOverlayShowUnitsCount.Text = "Show Units Scan Count";
             this.toolTip1.SetToolTip(this.checkBoxOverlayShowUnitsCount, "Enable this to Kill Baal");
@@ -752,9 +793,10 @@ partial class FormSettings
             // checkBoxOverlayShowMH
             // 
             this.checkBoxOverlayShowMH.AutoSize = true;
-            this.checkBoxOverlayShowMH.Location = new System.Drawing.Point(14, 169);
+            this.checkBoxOverlayShowMH.Location = new System.Drawing.Point(21, 260);
+            this.checkBoxOverlayShowMH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxOverlayShowMH.Name = "checkBoxOverlayShowMH";
-            this.checkBoxOverlayShowMH.Size = new System.Drawing.Size(179, 17);
+            this.checkBoxOverlayShowMH.Size = new System.Drawing.Size(260, 24);
             this.checkBoxOverlayShowMH.TabIndex = 20;
             this.checkBoxOverlayShowMH.Text = "Show Maphack Lines (MH Only)";
             this.toolTip1.SetToolTip(this.checkBoxOverlayShowMH, "Enable this to Kill Baal");
@@ -763,9 +805,10 @@ partial class FormSettings
             // checkBoxOverlayShowExits
             // 
             this.checkBoxOverlayShowExits.AutoSize = true;
-            this.checkBoxOverlayShowExits.Location = new System.Drawing.Point(14, 152);
+            this.checkBoxOverlayShowExits.Location = new System.Drawing.Point(21, 234);
+            this.checkBoxOverlayShowExits.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxOverlayShowExits.Name = "checkBoxOverlayShowExits";
-            this.checkBoxOverlayShowExits.Size = new System.Drawing.Size(78, 17);
+            this.checkBoxOverlayShowExits.Size = new System.Drawing.Size(113, 24);
             this.checkBoxOverlayShowExits.TabIndex = 19;
             this.checkBoxOverlayShowExits.Text = "Show Exits";
             this.toolTip1.SetToolTip(this.checkBoxOverlayShowExits, "Enable this to Kill Baal");
@@ -774,9 +817,10 @@ partial class FormSettings
             // checkBoxOverlayShowPath
             // 
             this.checkBoxOverlayShowPath.AutoSize = true;
-            this.checkBoxOverlayShowPath.Location = new System.Drawing.Point(14, 135);
+            this.checkBoxOverlayShowPath.Location = new System.Drawing.Point(21, 208);
+            this.checkBoxOverlayShowPath.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxOverlayShowPath.Name = "checkBoxOverlayShowPath";
-            this.checkBoxOverlayShowPath.Size = new System.Drawing.Size(115, 17);
+            this.checkBoxOverlayShowPath.Size = new System.Drawing.Size(168, 24);
             this.checkBoxOverlayShowPath.TabIndex = 18;
             this.checkBoxOverlayShowPath.Text = "Show Path Finding";
             this.toolTip1.SetToolTip(this.checkBoxOverlayShowPath, "Enable this to Kill Baal");
@@ -785,9 +829,10 @@ partial class FormSettings
             // checkBoxOverlayShowNPC
             // 
             this.checkBoxOverlayShowNPC.AutoSize = true;
-            this.checkBoxOverlayShowNPC.Location = new System.Drawing.Point(14, 118);
+            this.checkBoxOverlayShowNPC.Location = new System.Drawing.Point(21, 182);
+            this.checkBoxOverlayShowNPC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxOverlayShowNPC.Name = "checkBoxOverlayShowNPC";
-            this.checkBoxOverlayShowNPC.Size = new System.Drawing.Size(85, 17);
+            this.checkBoxOverlayShowNPC.Size = new System.Drawing.Size(122, 24);
             this.checkBoxOverlayShowNPC.TabIndex = 17;
             this.checkBoxOverlayShowNPC.Text = "Show NPC\'s";
             this.toolTip1.SetToolTip(this.checkBoxOverlayShowNPC, "Enable this to Kill Baal");
@@ -796,18 +841,20 @@ partial class FormSettings
             // textBoxStartKey
             // 
             this.textBoxStartKey.FormattingEnabled = true;
-            this.textBoxStartKey.Location = new System.Drawing.Point(141, 643);
+            this.textBoxStartKey.Location = new System.Drawing.Point(212, 989);
+            this.textBoxStartKey.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxStartKey.Name = "textBoxStartKey";
-            this.textBoxStartKey.Size = new System.Drawing.Size(96, 21);
+            this.textBoxStartKey.Size = new System.Drawing.Size(142, 28);
             this.textBoxStartKey.TabIndex = 25;
             this.toolTip1.SetToolTip(this.textBoxStartKey, "Set the Shortcut Key for Starting/Stopping the Bot");
             // 
             // comboBoxPauseResume
             // 
             this.comboBoxPauseResume.FormattingEnabled = true;
-            this.comboBoxPauseResume.Location = new System.Drawing.Point(141, 666);
+            this.comboBoxPauseResume.Location = new System.Drawing.Point(212, 1025);
+            this.comboBoxPauseResume.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.comboBoxPauseResume.Name = "comboBoxPauseResume";
-            this.comboBoxPauseResume.Size = new System.Drawing.Size(96, 21);
+            this.comboBoxPauseResume.Size = new System.Drawing.Size(142, 28);
             this.comboBoxPauseResume.TabIndex = 27;
             this.toolTip1.SetToolTip(this.comboBoxPauseResume, "Set the Shortcut Key for Pausing/Resuming the Bot");
             // 
@@ -816,9 +863,10 @@ partial class FormSettings
             this.checkBoxLogOrangeError.AutoSize = true;
             this.checkBoxLogOrangeError.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxLogOrangeError.ForeColor = System.Drawing.Color.Red;
-            this.checkBoxLogOrangeError.Location = new System.Drawing.Point(4, 622);
+            this.checkBoxLogOrangeError.Location = new System.Drawing.Point(6, 957);
+            this.checkBoxLogOrangeError.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxLogOrangeError.Name = "checkBoxLogOrangeError";
-            this.checkBoxLogOrangeError.Size = new System.Drawing.Size(244, 17);
+            this.checkBoxLogOrangeError.Size = new System.Drawing.Size(373, 24);
             this.checkBoxLogOrangeError.TabIndex = 28;
             this.checkBoxLogOrangeError.Text = "Logs less useful Errors (Orange Errors)";
             this.toolTip1.SetToolTip(this.checkBoxLogOrangeError, "Show Graphics Overlay (Maphack, Bot Infos, Etc..)");
@@ -826,33 +874,37 @@ partial class FormSettings
             // 
             // textBoxSearchGame
             // 
-            this.textBoxSearchGame.Location = new System.Drawing.Point(85, 17);
+            this.textBoxSearchGame.Location = new System.Drawing.Point(128, 26);
+            this.textBoxSearchGame.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxSearchGame.Name = "textBoxSearchGame";
-            this.textBoxSearchGame.Size = new System.Drawing.Size(149, 20);
+            this.textBoxSearchGame.Size = new System.Drawing.Size(222, 26);
             this.textBoxSearchGame.TabIndex = 0;
             this.toolTip1.SetToolTip(this.textBoxSearchGame, "Set your Search for \'Game Name\' here");
             // 
             // textBox2LeechName
             // 
-            this.textBox2LeechName.Location = new System.Drawing.Point(85, 40);
+            this.textBox2LeechName.Location = new System.Drawing.Point(128, 62);
+            this.textBox2LeechName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2LeechName.Name = "textBox2LeechName";
-            this.textBox2LeechName.Size = new System.Drawing.Size(149, 20);
+            this.textBox2LeechName.Size = new System.Drawing.Size(222, 26);
             this.textBox2LeechName.TabIndex = 29;
             this.toolTip1.SetToolTip(this.textBox2LeechName, "Set the Player name of who follow you for the Rush");
             // 
             // textBoxAvoidWords
             // 
-            this.textBoxAvoidWords.Location = new System.Drawing.Point(85, 63);
+            this.textBoxAvoidWords.Location = new System.Drawing.Point(128, 97);
+            this.textBoxAvoidWords.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBoxAvoidWords.Name = "textBoxAvoidWords";
-            this.textBoxAvoidWords.Size = new System.Drawing.Size(149, 20);
+            this.textBoxAvoidWords.Size = new System.Drawing.Size(222, 26);
             this.textBoxAvoidWords.TabIndex = 31;
             this.toolTip1.SetToolTip(this.textBoxAvoidWords, "Add the Words you want to avoid entering the game");
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(61, 82);
+            this.button4.Location = new System.Drawing.Point(92, 126);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(112, 35);
             this.button4.TabIndex = 12;
             this.button4.Text = "Apply";
             this.toolTip1.SetToolTip(this.button4, "Apply and Leave this menu");
@@ -862,9 +914,10 @@ partial class FormSettings
             // checkBoxFastChaos
             // 
             this.checkBoxFastChaos.AutoSize = true;
-            this.checkBoxFastChaos.Location = new System.Drawing.Point(14, 33);
+            this.checkBoxFastChaos.Location = new System.Drawing.Point(21, 51);
+            this.checkBoxFastChaos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxFastChaos.Name = "checkBoxFastChaos";
-            this.checkBoxFastChaos.Size = new System.Drawing.Size(79, 17);
+            this.checkBoxFastChaos.Size = new System.Drawing.Size(117, 24);
             this.checkBoxFastChaos.TabIndex = 12;
             this.checkBoxFastChaos.Text = "Fast Chaos";
             this.toolTip1.SetToolTip(this.checkBoxFastChaos, "Enable this to perform a Fast Chaos (Only Kill Seals Boss)");
@@ -873,9 +926,10 @@ partial class FormSettings
             // buttonOverlaySettings
             // 
             this.buttonOverlaySettings.Image = global::app.Properties.Resources.Application;
-            this.buttonOverlaySettings.Location = new System.Drawing.Point(172, 595);
+            this.buttonOverlaySettings.Location = new System.Drawing.Point(258, 915);
+            this.buttonOverlaySettings.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonOverlaySettings.Name = "buttonOverlaySettings";
-            this.buttonOverlaySettings.Size = new System.Drawing.Size(31, 25);
+            this.buttonOverlaySettings.Size = new System.Drawing.Size(46, 38);
             this.buttonOverlaySettings.TabIndex = 9;
             this.toolTip1.SetToolTip(this.buttonOverlaySettings, "Edit Overlay Settings");
             this.buttonOverlaySettings.UseVisualStyleBackColor = true;
@@ -886,9 +940,10 @@ partial class FormSettings
             this.buttonReload.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonReload.ForeColor = System.Drawing.SystemColors.ControlText;
             this.buttonReload.Image = global::app.Properties.Resources.Load;
-            this.buttonReload.Location = new System.Drawing.Point(12, 6);
+            this.buttonReload.Location = new System.Drawing.Point(18, 9);
+            this.buttonReload.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonReload.Name = "buttonReload";
-            this.buttonReload.Size = new System.Drawing.Size(34, 29);
+            this.buttonReload.Size = new System.Drawing.Size(51, 45);
             this.buttonReload.TabIndex = 17;
             this.toolTip1.SetToolTip(this.buttonReload, "Load/Import from a previous Settings File");
             this.buttonReload.UseVisualStyleBackColor = true;
@@ -899,9 +954,10 @@ partial class FormSettings
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button2.Image = global::app.Properties.Resources.Save;
-            this.button2.Location = new System.Drawing.Point(189, 6);
+            this.button2.Location = new System.Drawing.Point(284, 9);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(48, 29);
+            this.button2.Size = new System.Drawing.Size(72, 45);
             this.button2.TabIndex = 13;
             this.toolTip1.SetToolTip(this.button2, "Save current Settings");
             this.button2.UseVisualStyleBackColor = true;
@@ -911,9 +967,10 @@ partial class FormSettings
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button5.Location = new System.Drawing.Point(53, 6);
+            this.button5.Location = new System.Drawing.Point(80, 9);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(131, 29);
+            this.button5.Size = new System.Drawing.Size(196, 45);
             this.button5.TabIndex = 29;
             this.button5.Text = "Advanced Settings";
             this.toolTip1.SetToolTip(this.button5, "Load/Import from a previous Settings File");
@@ -923,9 +980,10 @@ partial class FormSettings
             // checkBoxBaalLeechFightMobs
             // 
             this.checkBoxBaalLeechFightMobs.AutoSize = true;
-            this.checkBoxBaalLeechFightMobs.Location = new System.Drawing.Point(14, 33);
+            this.checkBoxBaalLeechFightMobs.Location = new System.Drawing.Point(21, 51);
+            this.checkBoxBaalLeechFightMobs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.checkBoxBaalLeechFightMobs.Name = "checkBoxBaalLeechFightMobs";
-            this.checkBoxBaalLeechFightMobs.Size = new System.Drawing.Size(78, 17);
+            this.checkBoxBaalLeechFightMobs.Size = new System.Drawing.Size(114, 24);
             this.checkBoxBaalLeechFightMobs.TabIndex = 12;
             this.checkBoxBaalLeechFightMobs.Text = "Fight Mobs";
             this.toolTip1.SetToolTip(this.checkBoxBaalLeechFightMobs, "Enable this to fight mobs during the leech, if set to false it will fight mobs on" +
@@ -934,9 +992,10 @@ partial class FormSettings
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(61, 82);
+            this.button6.Location = new System.Drawing.Point(92, 126);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(112, 35);
             this.button6.TabIndex = 12;
             this.button6.Text = "Apply";
             this.toolTip1.SetToolTip(this.button6, "Apply and Leave this menu");
@@ -945,9 +1004,10 @@ partial class FormSettings
             // 
             // buttonApplyShopBot
             // 
-            this.buttonApplyShopBot.Location = new System.Drawing.Point(61, 82);
+            this.buttonApplyShopBot.Location = new System.Drawing.Point(92, 126);
+            this.buttonApplyShopBot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonApplyShopBot.Name = "buttonApplyShopBot";
-            this.buttonApplyShopBot.Size = new System.Drawing.Size(75, 23);
+            this.buttonApplyShopBot.Size = new System.Drawing.Size(112, 35);
             this.buttonApplyShopBot.TabIndex = 12;
             this.buttonApplyShopBot.Text = "Apply";
             this.toolTip1.SetToolTip(this.buttonApplyShopBot, "Apply and Leave this menu");
@@ -956,7 +1016,8 @@ partial class FormSettings
             // 
             // numericUpDownMaxShopCount
             // 
-            this.numericUpDownMaxShopCount.Location = new System.Drawing.Point(107, 33);
+            this.numericUpDownMaxShopCount.Location = new System.Drawing.Point(160, 51);
+            this.numericUpDownMaxShopCount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownMaxShopCount.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -968,13 +1029,14 @@ partial class FormSettings
             0,
             -2147483648});
             this.numericUpDownMaxShopCount.Name = "numericUpDownMaxShopCount";
-            this.numericUpDownMaxShopCount.Size = new System.Drawing.Size(51, 20);
+            this.numericUpDownMaxShopCount.Size = new System.Drawing.Size(76, 26);
             this.numericUpDownMaxShopCount.TabIndex = 13;
             this.toolTip1.SetToolTip(this.numericUpDownMaxShopCount, "Set the Bot go to Shop Count, if at -1 or 0, It will Shop Infinitly");
             // 
             // numericUpDownShopTownAct
             // 
-            this.numericUpDownShopTownAct.Location = new System.Drawing.Point(107, 56);
+            this.numericUpDownShopTownAct.Location = new System.Drawing.Point(160, 86);
+            this.numericUpDownShopTownAct.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.numericUpDownShopTownAct.Maximum = new decimal(new int[] {
             5,
             0,
@@ -986,7 +1048,7 @@ partial class FormSettings
             0,
             0});
             this.numericUpDownShopTownAct.Name = "numericUpDownShopTownAct";
-            this.numericUpDownShopTownAct.Size = new System.Drawing.Size(51, 20);
+            this.numericUpDownShopTownAct.Size = new System.Drawing.Size(76, 26);
             this.numericUpDownShopTownAct.TabIndex = 15;
             this.toolTip1.SetToolTip(this.numericUpDownShopTownAct, "Set the Town act of which of want to shop bot to run for");
             this.numericUpDownShopTownAct.Value = new decimal(new int[] {
@@ -1005,9 +1067,10 @@ partial class FormSettings
             this.panelBaalFeature.Controls.Add(this.buttonBaalApply);
             this.panelBaalFeature.Controls.Add(this.checkBoxKillBaal);
             this.panelBaalFeature.Controls.Add(this.label7);
-            this.panelBaalFeature.Location = new System.Drawing.Point(289, 12);
+            this.panelBaalFeature.Location = new System.Drawing.Point(434, 18);
+            this.panelBaalFeature.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelBaalFeature.Name = "panelBaalFeature";
-            this.panelBaalFeature.Size = new System.Drawing.Size(203, 275);
+            this.panelBaalFeature.Size = new System.Drawing.Size(304, 423);
             this.panelBaalFeature.TabIndex = 15;
             // 
             // groupBox2
@@ -1019,9 +1082,11 @@ partial class FormSettings
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.numericUpDownBaalMobID);
-            this.groupBox2.Location = new System.Drawing.Point(3, 109);
+            this.groupBox2.Location = new System.Drawing.Point(4, 168);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(197, 133);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Size = new System.Drawing.Size(296, 205);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             // 
@@ -1035,9 +1100,10 @@ partial class FormSettings
             this.listViewBaalLeaveOnMobs.GridLines = true;
             this.listViewBaalLeaveOnMobs.HideSelection = false;
             this.listViewBaalLeaveOnMobs.LabelWrap = false;
-            this.listViewBaalLeaveOnMobs.Location = new System.Drawing.Point(6, 65);
+            this.listViewBaalLeaveOnMobs.Location = new System.Drawing.Point(9, 100);
+            this.listViewBaalLeaveOnMobs.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listViewBaalLeaveOnMobs.Name = "listViewBaalLeaveOnMobs";
-            this.listViewBaalLeaveOnMobs.Size = new System.Drawing.Size(185, 62);
+            this.listViewBaalLeaveOnMobs.Size = new System.Drawing.Size(276, 93);
             this.listViewBaalLeaveOnMobs.TabIndex = 7;
             this.listViewBaalLeaveOnMobs.UseCompatibleStateImageBehavior = false;
             this.listViewBaalLeaveOnMobs.View = System.Windows.Forms.View.Details;
@@ -1055,36 +1121,40 @@ partial class FormSettings
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(4, 16);
+            this.label11.Location = new System.Drawing.Point(6, 25);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(45, 13);
+            this.label11.Size = new System.Drawing.Size(65, 20);
             this.label11.TabIndex = 7;
             this.label11.Text = "Mob ID:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(104, 16);
+            this.label12.Location = new System.Drawing.Point(156, 25);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(38, 13);
+            this.label12.Size = new System.Drawing.Size(56, 20);
             this.label12.TabIndex = 9;
             this.label12.Text = "Count:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(40, 95);
+            this.label9.Location = new System.Drawing.Point(60, 146);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(121, 13);
+            this.label9.Size = new System.Drawing.Size(175, 20);
             this.label9.TabIndex = 3;
             this.label9.Text = "Leave on Mobs Nearby:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(11, 71);
+            this.label10.Location = new System.Drawing.Point(16, 109);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(115, 13);
+            this.label10.Size = new System.Drawing.Size(168, 20);
             this.label10.TabIndex = 5;
             this.label10.Text = "Leave on Mobs Count:";
             this.label10.Click += new System.EventHandler(this.label10_Click);
@@ -1094,9 +1164,10 @@ partial class FormSettings
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Blue;
-            this.label7.Location = new System.Drawing.Point(43, 11);
+            this.label7.Location = new System.Drawing.Point(64, 17);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(112, 13);
+            this.label7.Size = new System.Drawing.Size(166, 20);
             this.label7.TabIndex = 0;
             this.label7.Text = "Baal Run Features";
             // 
@@ -1120,9 +1191,10 @@ partial class FormSettings
             this.panelOverlay.Controls.Add(this.checkBoxOverlayShowMobs);
             this.panelOverlay.Controls.Add(this.label14);
             this.panelOverlay.Controls.Add(this.button3);
-            this.panelOverlay.Location = new System.Drawing.Point(523, 12);
+            this.panelOverlay.Location = new System.Drawing.Point(784, 18);
+            this.panelOverlay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelOverlay.Name = "panelOverlay";
-            this.panelOverlay.Size = new System.Drawing.Size(203, 250);
+            this.panelOverlay.Size = new System.Drawing.Size(304, 385);
             this.panelOverlay.TabIndex = 18;
             // 
             // label14
@@ -1130,18 +1202,20 @@ partial class FormSettings
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Blue;
-            this.label14.Location = new System.Drawing.Point(50, 11);
+            this.label14.Location = new System.Drawing.Point(75, 17);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(103, 13);
+            this.label14.Size = new System.Drawing.Size(153, 20);
             this.label14.TabIndex = 12;
             this.label14.Text = "Overlay Features";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(8, 669);
+            this.label15.Location = new System.Drawing.Point(12, 1029);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(127, 13);
+            this.label15.Size = new System.Drawing.Size(187, 20);
             this.label15.TabIndex = 26;
             this.label15.Text = "Pause/Resume Shortcut:";
             // 
@@ -1153,9 +1227,11 @@ partial class FormSettings
             this.groupBoxSearch.Controls.Add(this.label16);
             this.groupBoxSearch.Controls.Add(this.label19);
             this.groupBoxSearch.Controls.Add(this.textBoxSearchGame);
-            this.groupBoxSearch.Location = new System.Drawing.Point(279, 481);
+            this.groupBoxSearch.Location = new System.Drawing.Point(418, 740);
+            this.groupBoxSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBoxSearch.Name = "groupBoxSearch";
-            this.groupBoxSearch.Size = new System.Drawing.Size(244, 113);
+            this.groupBoxSearch.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxSearch.Size = new System.Drawing.Size(366, 174);
             this.groupBoxSearch.TabIndex = 9;
             this.groupBoxSearch.TabStop = false;
             this.groupBoxSearch.Text = "Game Search Settings";
@@ -1163,27 +1239,30 @@ partial class FormSettings
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 66);
+            this.label17.Location = new System.Drawing.Point(9, 102);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(71, 13);
+            this.label17.Size = new System.Drawing.Size(102, 20);
             this.label17.TabIndex = 32;
             this.label17.Text = "Avoid Words:";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 43);
+            this.label16.Location = new System.Drawing.Point(9, 66);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(80, 13);
+            this.label16.Size = new System.Drawing.Size(117, 20);
             this.label16.TabIndex = 30;
             this.label16.Text = "Leecher Name:";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(9, 20);
+            this.label19.Location = new System.Drawing.Point(14, 31);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(75, 13);
+            this.label19.Size = new System.Drawing.Size(110, 20);
             this.label19.TabIndex = 1;
             this.label19.Text = "Search Name:";
             // 
@@ -1192,9 +1271,10 @@ partial class FormSettings
             this.panelChaosFeature.Controls.Add(this.checkBoxFastChaos);
             this.panelChaosFeature.Controls.Add(this.label18);
             this.panelChaosFeature.Controls.Add(this.button4);
-            this.panelChaosFeature.Location = new System.Drawing.Point(523, 268);
+            this.panelChaosFeature.Location = new System.Drawing.Point(784, 412);
+            this.panelChaosFeature.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelChaosFeature.Name = "panelChaosFeature";
-            this.panelChaosFeature.Size = new System.Drawing.Size(203, 114);
+            this.panelChaosFeature.Size = new System.Drawing.Size(304, 175);
             this.panelChaosFeature.TabIndex = 22;
             this.panelChaosFeature.Visible = false;
             // 
@@ -1203,9 +1283,10 @@ partial class FormSettings
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Blue;
-            this.label18.Location = new System.Drawing.Point(43, 11);
+            this.label18.Location = new System.Drawing.Point(64, 17);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(122, 13);
+            this.label18.Size = new System.Drawing.Size(181, 20);
             this.label18.TabIndex = 12;
             this.label18.Text = "Chaos Run Features";
             // 
@@ -1214,9 +1295,10 @@ partial class FormSettings
             this.panelBaalLeech.Controls.Add(this.checkBoxBaalLeechFightMobs);
             this.panelBaalLeech.Controls.Add(this.label20);
             this.panelBaalLeech.Controls.Add(this.button6);
-            this.panelBaalLeech.Location = new System.Drawing.Point(523, 388);
+            this.panelBaalLeech.Location = new System.Drawing.Point(784, 597);
+            this.panelBaalLeech.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelBaalLeech.Name = "panelBaalLeech";
-            this.panelBaalLeech.Size = new System.Drawing.Size(203, 114);
+            this.panelBaalLeech.Size = new System.Drawing.Size(304, 175);
             this.panelBaalLeech.TabIndex = 23;
             this.panelBaalLeech.Visible = false;
             // 
@@ -1225,9 +1307,10 @@ partial class FormSettings
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Blue;
-            this.label20.Location = new System.Drawing.Point(27, 11);
+            this.label20.Location = new System.Drawing.Point(40, 17);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(151, 13);
+            this.label20.Size = new System.Drawing.Size(223, 20);
             this.label20.TabIndex = 12;
             this.label20.Text = "Baal Leech Run Features";
             // 
@@ -1239,27 +1322,30 @@ partial class FormSettings
             this.panelShopBot.Controls.Add(this.label22);
             this.panelShopBot.Controls.Add(this.label21);
             this.panelShopBot.Controls.Add(this.buttonApplyShopBot);
-            this.panelShopBot.Location = new System.Drawing.Point(732, 12);
+            this.panelShopBot.Location = new System.Drawing.Point(1098, 18);
+            this.panelShopBot.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelShopBot.Name = "panelShopBot";
-            this.panelShopBot.Size = new System.Drawing.Size(203, 114);
+            this.panelShopBot.Size = new System.Drawing.Size(304, 175);
             this.panelShopBot.TabIndex = 24;
             this.panelShopBot.Visible = false;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(14, 59);
+            this.label23.Location = new System.Drawing.Point(21, 91);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(56, 13);
+            this.label23.Size = new System.Drawing.Size(79, 20);
             this.label23.TabIndex = 14;
             this.label23.Text = "Town Act:";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(14, 36);
+            this.label22.Location = new System.Drawing.Point(21, 55);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(89, 13);
+            this.label22.Size = new System.Drawing.Size(131, 20);
             this.label22.TabIndex = 12;
             this.label22.Text = "Max Shop Count:";
             // 
@@ -1268,18 +1354,19 @@ partial class FormSettings
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Blue;
-            this.label21.Location = new System.Drawing.Point(34, 11);
+            this.label21.Location = new System.Drawing.Point(51, 17);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(135, 13);
+            this.label21.Size = new System.Drawing.Size(199, 20);
             this.label21.TabIndex = 12;
             this.label21.Text = "ShopBot Run Features";
             // 
             // FormSettings
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(251, 691);
+            this.ClientSize = new System.Drawing.Size(1475, 1063);
             this.Controls.Add(this.panelShopBot);
             this.Controls.Add(this.panelBaalLeech);
             this.Controls.Add(this.button5);
@@ -1312,6 +1399,7 @@ partial class FormSettings
             this.Controls.Add(this.listViewRunScripts);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "FormSettings";
             this.Text = "BMBot - Settings";

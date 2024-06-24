@@ -42,3 +42,47 @@ C:\Users\boule\OneDrive\Documents\Visual Studio 2022\Projects\D2R-BMBot-main\obj
 C:\Users\boule\OneDrive\Documents\Visual Studio 2022\Projects\D2R-BMBot-main\obj\Debug\app.exe
 C:\Users\boule\OneDrive\Documents\Visual Studio 2022\Projects\D2R-BMBot-main\obj\Debug\app.pdb
 C:\Users\boule\OneDrive\Documents\Visual Studio 2022\Projects\D2R-BMBot-main\obj\Debug\FormAdvancedSettings.resources
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\Settings\Char\PaladinHammer.txt
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\Settings\Char\SorceressBlizzard.txt
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\Settings\CubingRecipes.txt
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\Settings\BotSettings.txt
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\Settings\CharSettings.txt
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\Settings\ItemsSettings.txt
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\app.exe.config
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\app.exe
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\app.pdb
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\Newtonsoft.Json.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Buffers.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Collections.Immutable.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Memory.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Numerics.Vectors.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Text.Encoding.CodePages.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Text.Json.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\WindowsInput.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.ValueTuple.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Text.Encodings.Web.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Threading.Tasks.Extensions.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\Newtonsoft.Json.pdb
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\Newtonsoft.Json.xml
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Buffers.xml
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Collections.Immutable.xml
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Memory.xml
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Numerics.Vectors.xml
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\System.Text.Encoding.CodePages.xml
+Y:\Projects\source\repos\D2R-BMBot\bin\Debug\WindowsInput.xml
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\app.csproj.AssemblyReference.cache
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\Form1.resources
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\FormAdvancedSettings.resources
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\FormCharSettings.resources
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\FormD2LOD.resources
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\FormItems.resources
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\FormSettings.resources
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\OverlayForm.resources
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\app.Properties.Resources.resources
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\app.csproj.GenerateResource.cache
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\app.csproj.CoreCompileInputs.cache
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\app.csproj.Up2Date
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\app.exe
+Y:\Projects\source\repos\D2R-BMBot\obj\Debug\app.pdb

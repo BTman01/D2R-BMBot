@@ -1,0 +1,184 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "Y:\\Projects\\source\\repos\\D2R-BMBot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|y:\\projects\\source\\repos\\d2r-bmbot\\bots\\countess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|solutionrelative:bots\\countess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|y:\\projects\\source\\repos\\d2r-bmbot\\strucs\\gamestruc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|solutionrelative:strucs\\gamestruc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|Y:\\Projects\\source\\repos\\D2R-BMBot\\strucs\\mercstruc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|solutionrelative:strucs\\mercstruc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|Y:\\Projects\\source\\repos\\D2R-BMBot\\strucs\\enumsmobsnpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|solutionrelative:strucs\\enumsmobsnpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|Y:\\Projects\\source\\repos\\D2R-BMBot\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|Y:\\Projects\\source\\repos\\D2R-BMBot\\bots\\baalleech.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|solutionrelative:bots\\baalleech.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|Y:\\Projects\\source\\repos\\D2R-BMBot\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|solutionrelative:formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|Y:\\Projects\\source\\repos\\D2R-BMBot\\formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|solutionrelative:formsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|Y:\\Projects\\source\\repos\\D2R-BMBot\\config\\charconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|solutionrelative:config\\charconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|Y:\\Projects\\source\\repos\\D2R-BMBot\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F07A94F-EFC7-4E4B-807A-83F884EE0B44}|app.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Countess.cs",
+              "DocumentMoniker": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Bots\\Countess.cs",
+              "RelativeDocumentMoniker": "Bots\\Countess.cs",
+              "ToolTip": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Bots\\Countess.cs",
+              "RelativeToolTip": "Bots\\Countess.cs",
+              "ViewState": "AQIAAMQAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T07:03:12.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnumsMobsNPC.cs",
+              "DocumentMoniker": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Strucs\\EnumsMobsNPC.cs",
+              "RelativeDocumentMoniker": "Strucs\\EnumsMobsNPC.cs",
+              "ToolTip": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Strucs\\EnumsMobsNPC.cs",
+              "RelativeToolTip": "Strucs\\EnumsMobsNPC.cs",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAawJ0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T04:15:53.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MercStruc.cs",
+              "DocumentMoniker": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Strucs\\MercStruc.cs",
+              "RelativeDocumentMoniker": "Strucs\\MercStruc.cs",
+              "ToolTip": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Strucs\\MercStruc.cs",
+              "RelativeToolTip": "Strucs\\MercStruc.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAWwEgAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T03:43:13.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaalLeech.cs",
+              "DocumentMoniker": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Bots\\BaalLeech.cs",
+              "RelativeDocumentMoniker": "Bots\\BaalLeech.cs",
+              "ToolTip": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Bots\\BaalLeech.cs",
+              "RelativeToolTip": "Bots\\BaalLeech.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwI4CAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T23:39:35.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CharConfig.cs",
+              "DocumentMoniker": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Config\\CharConfig.cs",
+              "RelativeDocumentMoniker": "Config\\CharConfig.cs",
+              "ToolTip": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Config\\CharConfig.cs",
+              "RelativeToolTip": "Config\\CharConfig.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAADwv1oAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T23:14:55.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAASwDEAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T23:08:48.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T23:08:31.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameStruc.cs",
+              "DocumentMoniker": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Strucs\\GameStruc.cs",
+              "RelativeDocumentMoniker": "Strucs\\GameStruc.cs",
+              "ToolTip": "Y:\\Projects\\source\\repos\\D2R-BMBot\\Strucs\\GameStruc.cs",
+              "RelativeToolTip": "Strucs\\GameStruc.cs",
+              "ViewState": "AQIAAAkBAAAAAAAAAAAcwBsBAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T23:08:22.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormSettings.cs",
+              "DocumentMoniker": "Y:\\Projects\\source\\repos\\D2R-BMBot\\FormSettings.cs",
+              "RelativeDocumentMoniker": "FormSettings.cs",
+              "ToolTip": "Y:\\Projects\\source\\repos\\D2R-BMBot\\FormSettings.cs",
+              "RelativeToolTip": "FormSettings.cs",
+              "ViewState": "AQIAAHABAAAAAAAAAAAcwHsBAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T23:08:12.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormSettings.cs [Design]",
+              "DocumentMoniker": "Y:\\Projects\\source\\repos\\D2R-BMBot\\FormSettings.cs",
+              "RelativeDocumentMoniker": "FormSettings.cs",
+              "ToolTip": "Y:\\Projects\\source\\repos\\D2R-BMBot\\FormSettings.cs [Design]",
+              "RelativeToolTip": "FormSettings.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T23:02:50.551Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
